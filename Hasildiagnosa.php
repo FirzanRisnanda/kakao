@@ -59,7 +59,10 @@
 				<p>
 				 Hasil Diagnosa adalah :
 				</p>
+				
 			</div>
+			</thead>
+			</table>
 		</article>
     <footer class="footer clearfix">
 		<div class="article">

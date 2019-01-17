@@ -2,7 +2,6 @@
 include "config/koneksi.php";
 
 $dlpenyakit = $_POST['Gejala'];
-
 echo json_encode($dlpenyakit);
 ?>
 <table class="table table-bordered">
@@ -15,36 +14,53 @@ echo json_encode($dlpenyakit);
 				<th class="align-left">Probabilitas gejala</th>
               </tr>
 			  </thead>
-			  
-		<?php
+</table>			  
+<?php
 foreach($dlpenyakit as $ddata){
-$sql   = "SELECT * FROM rule where idGejala=$ddata";
-         $diagnosaa = mysql_query($sql) or exit("Error query: <b>".$sql."</b>.");
-          foreach(mysql_fetch_assoc($diagnosaa) as $data2)
-		  {
-			  $rl = $data2['idPenyakit'];
-			  $sql = "SELECT * FROM rule where idPenyakit=$rl";
-			  $rulee = mysql_query($sql) or exit("Error query: <b>".$sql."</b>.");
-			  $jml_prob = 1;
-			   foreach (mysql_fetch_assoc($rulee) as $data4)
-			   {
-				   $probb = $data4['Probabilitas_gejala'];
-				   echo $probb;
+	$sql   = "SELECT * FROM rule where idGejala=$ddata";
+	$diagnosaa = mysql_query($sql) or exit("Error query: <b>".$sql."</b>.");
+	
+	foreach(array(mysql_fetch_assoc($diagnosaa)) as $data2){
+		$rl = $data2['idPenyakit'];
+		echo $rl;
 
-            // perkalian prob gejala
-            $jml_prob = $jml_prob*$probb;
-            echo ' = '.$jml_prob;
-            echo "<br>";
-			   }
-         ?>
-         <?php
+		echo "   =    ";
+		$sql = "SELECT * FROM rule where idPenyakit=$rl AND idGejala=$ddata";
+		$rulee = mysql_query($sql) or exit("Error query: <b>".$sql."</b>.");
+		
+		//$sql1 = "INSERT INTO jumlah_prob (idPenyakit,Jumlah) SELECT idPenyakit,Probabilitas_gejala FROM rule WHERE idPenyakit=$rl AND idGejala=$ddata ";
+		//mysql_query($sql1) or exit("Error query : <b>".$sql1."</b>.");
+		
+		foreach (array(mysql_fetch_assoc($rulee)) as $data3)
+		{
+			$probb = $data3['Probabilitas_gejala'];
+			echo $probb;
+			echo "<br>";
+		}
+		// $sql = "Select Jumlah from jumlah_prob where idPenyakit = $rl";
+		// $pr = mysql_query($sql) or exit("Error query : <b>".$sql."</b>.");
+		// $sql1 = "Select probabilitas_penyakit from penyakit where idPenyakit=$rl";
+		// $py = mysql_query($sql1) or exit("Error query : <b>".$sql1."</b>");
+		// $jml = 1;
+		// foreach ($a = 1; $a < $pr; $a++ )
+		// {
+			// $jml = $jml * $pr;
+			// $jmlh = $py * $jml;
+			// $jml;
+			// echo $jmlh;
+		// }
+    ?>
+
+    <?php
 		 }
-		 ?>
-<!--	rumusan akhir	select s.GejalaPenyakit,p.Penyakit,p.Penanganan, s.Penjelasan  from gejalapenyakit s INNER JOIN penyakit p on s.idPenyakit=p.idPenyakit where s.idPenyakit = 1 -->
-		 <?php
-         }        
 	?>
-	 </table>
+	
+	<?php
+		 }
+	?>
+	
+<!--	rumusan akhir	select s.GejalaPenyakit,p.Penyakit,p.Penanganan, s.Penjelasan  from gejalapenyakit s INNER JOIN penyakit p on s.idPenyakit=p.idPenyakit where s.idPenyakit = 1 -->
+	
 <!--
       
    

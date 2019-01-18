@@ -28,8 +28,8 @@ foreach($dlpenyakit as $ddata){
 		$sql = "SELECT * FROM rule where idPenyakit=$rl AND idGejala=$ddata";
 		$rulee = mysql_query($sql) or exit("Error query: <b>".$sql."</b>.");
 		
-		//$sql1 = "INSERT INTO jumlah_prob (idPenyakit,Jumlah) SELECT idPenyakit,Probabilitas_gejala FROM rule WHERE idPenyakit=$rl AND idGejala=$ddata ";
-		//mysql_query($sql1) or exit("Error query : <b>".$sql1."</b>.");
+		// $sql1 = "INSERT INTO jumlah_prob (idPenyakit,Jumlah) SELECT idPenyakit,Probabilitas_gejala FROM rule WHERE idPenyakit=$rl AND idGejala=$ddata ";
+		// mysql_query($sql1) or exit("Error query : <b>".$sql1."</b>.");
 		
 		foreach (array(mysql_fetch_assoc($rulee)) as $data3)
 		{
@@ -37,8 +37,7 @@ foreach($dlpenyakit as $ddata){
 			echo $probb;
 			echo "<br>";
 		}
-		// $sql = "Select Jumlah from jumlah_prob where idPenyakit = $rl";
-		// $pr = mysql_query($sql) or exit("Error query : <b>".$sql."</b>.");
+		 
 		// $sql1 = "Select probabilitas_penyakit from penyakit where idPenyakit=$rl";
 		// $py = mysql_query($sql1) or exit("Error query : <b>".$sql1."</b>");
 		// $jml = 1;
@@ -53,9 +52,35 @@ foreach($dlpenyakit as $ddata){
 
     <?php
 		 }
+
 	?>
 	
 	<?php
+		 }
+		 $sql = "SELECT count(idPenyakit) as juml FROM jumlah_prob GROUP by idPenyakit";
+		 $qu = mysql_query($sql);
+		 $ct = mysql_fetch_row($qu);
+		
+		 foreach (mysql_fetch_assoc($qu) as $kb)
+		 {
+		 $sql1 = "SELECT COUNT(Jumlah) as hitung from jumlah_prob WHERE idPenyakit=$rl";
+		 $z = mysql_query($sql1)or exit("Salah Goblok");
+		 $x = mysql_fetch_assoc($z);
+		 echo $x['hitung'] ;
+		 
+		 // for ($i1 =0 ;$i1 < $ct ; $i1++)
+		 // {
+			 // for($j = 0 ; $j <= $x ; $j++){
+				 // $sql = "Select Jumlah from jumlah_prob where idPenyakit=$rl";
+				 // $hitung = mysql_query($sql) or exit("Error Goblok");
+				 // $hasil = 1;
+				 // $hasil = $hasil*$hitung;
+				 
+			 // }
+			 // $i1++;
+			  // echo $hasil;
+		 // }
+		 // $i++;
 		 }
 	?>
 	

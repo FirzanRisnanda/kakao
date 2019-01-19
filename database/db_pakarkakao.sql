@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 07 Jan 2019 pada 15.22
+-- Generation Time: 19 Jan 2019 pada 13.12
 -- Versi Server: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -107,18 +107,18 @@ CREATE TABLE `gejalapenyakit` (
 --
 
 INSERT INTO `gejalapenyakit` (`idGejalaPenyakit`, `idPenyakit`, `GejalaPenyakit`, `Penyakit`, `Penjelasan`) VALUES
-(1, 1, 'Daun berbintik-bintik transparan \r\nDaun menguning \r\nDaun mengering\r\nDaun berlubang', 'Ulat Api', 'abcd'),
-(2, 2, 'Daun berlubang\r\nPucuk tanaman gundul sehingga tinggal tulang dan daun saja', 'Ulat Kilan', 'abcd'),
-(3, 0, 'Daun berlubang\r\nKerusakan yang terjadi pada pinggir daun', 'Kumbang Apoginia sp ', 'abcd'),
-(4, 0, 'Buah muda yang terserang mengering dan rontok\r\nJika tumbuh, permukaan kulit buah akan retakBuah tampak bercak-bercak hitam ', 'Kepik penghisap Buah', 'abcd'),
-(5, 0, 'Buah menjadi berlubang\r\nBuah menjadi busuk\r\nKerusakan sering terjadi pada buah yang sudah matang\r\nKerusakan terjadi pada biji dan daging kakao', 'Tikus', 'abcd'),
-(6, 0, 'Kerusakan terjadi pada biji dan daging kakao \r\nBuah akan lebih awal berwarna kuning\r\nJika digoyangkan tidak berbunyi\r\nBuah lebih berat\r\nBiji-biji saling melekat', 'Penggerek Buah Kakao', 'abcd'),
-(7, 0, 'Batang menjadi layu\r\nBatang menjadi kering\r\nBatang menjadi mati', 'Penggerek Batang Kakao', 'abcd'),
-(8, 0, 'Daun menguning\r\nRanting terlihat tanpa daun (ompong)\r\nPermukaan kulit ranting menjadi kasar dan belang\r\nJaringan pembuluh kayu yang rusak berupa garis-garis kecil kecoklatan ', 'Vascular Streak Diebak (VSD)', 'abcd'),
-(9, 0, 'Buah tampak bercak-bercak coklat kehitaman\r\nBuah menjadi busuk\r\nBuah kakao terasa lembek dan basah jika tersentuh jari', 'Busuk Buah', 'abcd'),
-(10, 0, 'Daun mengering\r\nBuah nampak bercak-bercak coklat kehitaman\r\nBuah menjadi busuk\r\nTerdapat bintik-bintik coklat tidak beraturan pada daun\r\nBuah muda menjadi layu, kering dan mengeriput', 'Antraknose', 'abcd'),
-(11, 0, 'Adanya benang-benang jamur tipis seperti sutera pada ranting\r\nTerdapat seperti sarang laba-laba\r\nDaun banyak yang tetap melekat pada ranting meskipun sudah kering\r\nTanaman mati', 'Jamur Upas', 'abcd'),
-(12, 0, 'Daun menguning\r\nDaun mengering\r\nTanaman mati \r\nDaun kakao menjadi layu ', 'Jamur Akar', 'abcd');
+(1, 1, 'Daun berbintik-bintik transparan <br>\r\nDaun menguning <br>\r\nDaun mengering<br>\r\nDaun berlubang', 'Ulat Api', 'abcd'),
+(2, 2, 'Daun berlubang<br>\r\nPucuk tanaman gundul sehingga tinggal tulang dan daun saja<br>', 'Ulat Kilan', 'abcd'),
+(3, 3, 'Daun berlubang <br>\r\nKerusakan yang terjadi pada pinggir daun', 'Kumbang Apoginia sp ', 'abcd'),
+(4, 4, 'Buah muda yang terserang mengering dan rontok<br>\r\nJika tumbuh, permukaan kulit buah akan retakBuah tampak bercak-bercak hitam ', 'Kepik penghisap Buah', 'abcd'),
+(5, 5, 'Buah menjadi berlubang<br>\r\nBuah menjadi busuk<br>\r\nKerusakan sering terjadi pada buah yang sudah matang<br>\r\nKerusakan terjadi pada biji dan daging kakao', 'Tikus', 'abcd'),
+(6, 6, 'Kerusakan terjadi pada biji dan daging kakao<br> \r\nBuah akan lebih awal berwarna kuning<br>\r\nJika digoyangkan tidak berbunyi\r\nBuah lebih berat<br>\r\nBiji-biji saling melekat<br>', 'Penggerek Buah Kakao', 'abcd'),
+(7, 7, 'Batang menjadi layu<br>\r\nBatang menjadi kering<br>\r\nBatang menjadi mati<br>', 'Penggerek Batang Kakao', 'abcd'),
+(8, 8, 'Daun menguning<br>\r\nRanting terlihat tanpa daun (ompong)<br>\r\nPermukaan kulit ranting menjadi kasar dan belang<br>\r\nJaringan pembuluh kayu yang rusak berupa garis-garis kecil kecoklatan ', 'Vascular Streak Diebak (VSD)', 'abcd'),
+(9, 9, 'Buah tampak bercak-bercak coklat kehitaman<br>\r\nBuah menjadi busuk<br>\r\nBuah kakao terasa lembek dan basah jika tersentuh jari', 'Busuk Buah', 'abcd'),
+(10, 10, 'Daun mengering<br>\r\nBuah nampak bercak-bercak coklat kehitaman<br>\r\nBuah menjadi busuk<br>\r\nTerdapat bintik-bintik coklat tidak beraturan pada daun<br>\r\nBuah muda menjadi layu, kering dan mengeriput', 'Antraknose', 'abcd'),
+(11, 11, 'Adanya benang-benang jamur tipis seperti sutera pada ranting<br>\r\nTerdapat seperti sarang laba-laba<br>\r\nDaun banyak yang tetap melekat pada ranting meskipun sudah kering<br>\r\nTanaman mati', 'Jamur Upas', 'abcd'),
+(12, 12, 'Daun menguning<br>\r\nDaun mengering<br>\r\nTanaman mati <br>\r\nDaun kakao menjadi layu ', 'Jamur Akar', 'abcd');
 
 -- --------------------------------------------------------
 
@@ -128,8 +128,20 @@ INSERT INTO `gejalapenyakit` (`idGejalaPenyakit`, `idPenyakit`, `GejalaPenyakit`
 
 CREATE TABLE `jumlah_prob` (
   `idJumlahProb` int(11) NOT NULL,
+  `idPenyakit` int(11) NOT NULL,
   `Jumlah` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `jumlah_prob`
+--
+
+INSERT INTO `jumlah_prob` (`idJumlahProb`, `idPenyakit`, `Jumlah`) VALUES
+(21, 6, 0.2),
+(22, 6, 0.3),
+(23, 7, 0.3),
+(24, 7, 0.3),
+(25, 7, 0.4);
 
 -- --------------------------------------------------------
 
@@ -263,7 +275,8 @@ ALTER TABLE `gejalapenyakit`
 -- Indexes for table `jumlah_prob`
 --
 ALTER TABLE `jumlah_prob`
-  ADD PRIMARY KEY (`idJumlahProb`);
+  ADD PRIMARY KEY (`idJumlahProb`),
+  ADD KEY `idPenyakit` (`idPenyakit`);
 
 --
 -- Indexes for table `jumlah_prob_akhir`
@@ -309,7 +322,7 @@ ALTER TABLE `gejalapenyakit`
 -- AUTO_INCREMENT for table `jumlah_prob`
 --
 ALTER TABLE `jumlah_prob`
-  MODIFY `idJumlahProb` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idJumlahProb` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 --
 -- AUTO_INCREMENT for table `jumlah_prob_akhir`
 --
@@ -328,6 +341,18 @@ ALTER TABLE `rule`
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
+
+--
+-- Ketidakleluasaan untuk tabel `gejalapenyakit`
+--
+ALTER TABLE `gejalapenyakit`
+  ADD CONSTRAINT `gejala` FOREIGN KEY (`idPenyakit`) REFERENCES `penyakit` (`idPenyakit`);
+
+--
+-- Ketidakleluasaan untuk tabel `jumlah_prob`
+--
+ALTER TABLE `jumlah_prob`
+  ADD CONSTRAINT `jml_probb` FOREIGN KEY (`idPenyakit`) REFERENCES `penyakit` (`idPenyakit`);
 
 --
 -- Ketidakleluasaan untuk tabel `jumlah_prob_akhir`

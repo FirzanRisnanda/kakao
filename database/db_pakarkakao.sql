@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 19 Jan 2019 pada 13.12
+-- Generation Time: 21 Jan 2019 pada 10.08
 -- Versi Server: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -131,17 +131,6 @@ CREATE TABLE `jumlah_prob` (
   `idPenyakit` int(11) NOT NULL,
   `Jumlah` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `jumlah_prob`
---
-
-INSERT INTO `jumlah_prob` (`idJumlahProb`, `idPenyakit`, `Jumlah`) VALUES
-(21, 6, 0.2),
-(22, 6, 0.3),
-(23, 7, 0.3),
-(24, 7, 0.3),
-(25, 7, 0.4);
 
 -- --------------------------------------------------------
 

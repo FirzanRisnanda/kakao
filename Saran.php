@@ -47,7 +47,7 @@
 	            <li><a href="saran.php">Saran</a>
 				<li><a href="About.php">About</a>
 				<li><a href="Help.php">Help</a>
-	            <li><a href="admin/login.php">Login</a></li>
+
 	        </ul>
 		</div>
 		<div class="clearfix"></div>

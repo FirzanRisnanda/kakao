@@ -31,7 +31,7 @@
 	            <li><a href="saran.php">Saran</a>
 				<li><a href="About.php">About</a>
 				<li><a href="Help.php">Help</a>
-	            <li><a href="admin/login.php">Login</a></li>
+	            
 	        </ul>
 		</div>
 		<div class="clearfix"></div>
@@ -53,7 +53,7 @@
 
         //get data gejala from user
         $dlpenyakit = $_POST['Gejala'];
-        //echo json_encode($dlpenyakit);
+ 
     ?>
         
     <!--get and show idGejala and idPenyakit-->
@@ -63,9 +63,9 @@
             $getidGejala = mysql_query($sqlgetidGejala) or exit("Error query: <b>".$sql."</b>.");
             while($row = mysql_fetch_assoc($getidGejala)){
                 $idgejala1= $row['idGejala'];
-                //echo ".";   
+                 
                 $idpenyakit1 = $row['idPenyakit'];
-                //echo "<br>";
+                
                 //make array idPenyakit for distinct
                 $idpenyakit2[] = $row['idPenyakit'];
 
@@ -94,7 +94,7 @@
         for($x = 0; $x < count($dataPenyakitsort); $x++) {
             $newdata = $dataPenyakitsort[$x];
             $newidPenyakit[] = $dataPenyakitsort[$x];
-            //echo "<br>";
+            
             $sqlidprobPenyakit = "SELECT * FROM penyakit where idPenyakit=$newdata";
             $idprobPenyakit = mysql_query($sqlidprobPenyakit) or exit("Error query : <b>".$sql."</b>."); 
             while($row = mysql_fetch_assoc($idprobPenyakit)){
@@ -120,7 +120,7 @@
         for($i=0; $i < count($exprobPenyakit); $i++){
             $hasil[$i] = $exprobPenyakit[$i] * $exprobtot[$i];     
         }
-        //echo "<br>";
+       
         $imhasi = implode(",",$newidPenyakit);
         $exhasi = explode(",",$imhasi);
         $imhasil = implode(",",$hasil);
@@ -153,10 +153,6 @@
 		}
      ?>
      </table>      
-<!--   
-        echo "Jenis Penyakit:" .$row['Penyakit'] ."<br>" ."Penanganan :" ."<br>" .$row['Penanganan'];
-     }  
-?>-->
     </br>
     <button>
         <a href = "Diagnosa.php">

@@ -53,11 +53,20 @@
 
         //get data gejala from user
         $dlpenyakit = $_POST['Gejala'];
+		$cek = count($dlpenyakit);
+		
  
     ?>
         
     <!--get and show idGejala and idPenyakit-->
     <?php
+	if($cek == 1){
+		$message = "Ulangi!! minimal 2 gejala diagnosa yang dipilih";
+		echo "<script type='text/javascript'>alert('$message');</script>";
+		//echo "<a href="Diagnosa.php">";
+		echo "<script>location.href='Diagnosa.php';</script>";
+
+	}else{
         foreach($dlpenyakit as $ddata){
             $sqlgetidGejala   = "SELECT * FROM rule where idGejala=$ddata ";
             $getidGejala = mysql_query($sqlgetidGejala) or exit("Error query: <b>".$sql."</b>.");
@@ -151,7 +160,8 @@
         </tr>
 		<?php 
 		}
-     ?>
+	}
+    ?>
      </table>      
     </br>
     <button>

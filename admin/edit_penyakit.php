@@ -29,17 +29,18 @@ $data = mysql_fetch_assoc($hasil);
 <form action="index.php?page=edit_penyakit&id=<?php echo $_GET['id']?>" method="post">
 
 <input type="hidden" name="txtID" value="<?php echo $data['idPenyakit'];?>" />
+<br/>
 Penyakit :
 <input type="text" name="txtPenyakit" value="<?php echo $data['Penyakit'];?>" />
-<br />
+<br/>
 
 Penanganan :&nbsp;
 <input type="text" name="txtPenanganan" value="<?php echo $data['Penanganan'];?>" />
-<br />
+<br/>
 
 Probabilitas Penyakit :&nbsp;
-<input type="text" name="Probabilitas_penyakit" value="<?php echo $data['Probabilitas_penyakit'];?>" />
-<br />
+<input type="text" name="txtProbabilitas_penyakit"value="<?php echo $data['Probabilitas_penyakit'];?>" />
+<br/>
 
 <input type="submit" value="Submit" />
 </form>

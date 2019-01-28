@@ -60,7 +60,7 @@
         
     <!--get and show idGejala and idPenyakit-->
     <?php
-	if($cek == 1){
+	if($cek <= 1){
 		$message = "Ulangi!! minimal 2 gejala diagnosa yang dipilih";
 		echo "<script type='text/javascript'>alert('$message');</script>";
 		//echo "<a href="Diagnosa.php">";
@@ -148,10 +148,11 @@
 <th>Penanganan</th>
 </tr>
     <?php 
-        $sqlpenyakit = "SELECT a.idPenyakit, a.Penyakit, a.Penanganan, Min(b.Jumlah) 
+        $sqlpenyakit = "SELECT a.idPenyakit, a.Penyakit, a.Penanganan, b.Jumlah 
         FROM penyakit as a
-        JOIN jumlah_prob_akhir AS b 
-        ON a.idPenyakit = b.idPenyakit";
+        JOIN jumlah_prob_akhir AS b		
+        ON a.idPenyakit = b.idPenyakit
+		where b.jumlah in (select min(jumlah) from jumlah_prob_akhir)";
         $penyakit = mysql_query($sqlpenyakit) or exit("Error query : <b>".$sql."</b>."); 
         while($row = mysql_fetch_assoc($penyakit)){
        ?><tr> 

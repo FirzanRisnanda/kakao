@@ -8,10 +8,9 @@ echo "ID Rule : ".$data['idRule'];
 echo "<br />";
 echo "ID Gejala : ".$data['idGejala'];
 echo "<br />";
-echo "ID Penyakit : ".$data['idpenyakit'];
+echo "ID Penyakit : ".$data['idPenyakit'];
 echo "<br />";
 echo "Probabilitas Gejala : ".$data['Probabilitas_gejala'];
 echo "<br />";
 ?>
-
- <p>[ <a href="tampil_penyakit">Tampil Data</a> ] </p>
+ <p>[ <a href="index.php?page=tampil_rule">Tampil Data</a> ] </p>

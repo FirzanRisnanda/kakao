@@ -15,6 +15,7 @@
 		$sql.= "VALUES ('".$_POST['txtGejala']."')";
 		mysql_query($sql) or exit("Error query : <b>".$sql."</b>.");
 		echo "Data berhasil ditambahkan.";
+		header('location:index.php?page=tampil_gejala');
 	}
 
 	else

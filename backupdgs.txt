@@ -117,7 +117,7 @@
             FROM jumlah_prob GROUP by idPenyakit";
         $htgdatajmlProb = mysql_query($sqlhtgdatajmlProb) or exit("Error query : <b>".$sql."</b>.");          
         while($row = mysql_fetch_assoc($htgdatajmlProb)){
-           echo $jmlProb[] =  $row['Jumlah_Probabilitas'] .";";
+            $jmlProb[] =  $row['Jumlah_Probabilitas'] .";";
         }
     -   
         //make data array
@@ -125,22 +125,9 @@
         $exprobPenyakit = explode(",",$improbPenyakit);
         $improbtot = implode(",",$jmlProb);
         $exprobtot = explode(",",$improbtot);
-		
-		$sqlgettotal = "SELECT sum(Jumlah) as Totalp FROM jumlah_prob_akhir";
-		$gettotal = mysql_query($sqlgettotal) or exit("Error query : <b>".$sql."</b>.");          
-        while($row = mysql_fetch_assoc($gettotal)){
-            echo $jmltot[] =  $row['Totalp'] ;
-        }
-		
-		$improbjmltot = implode(",",$jmltot);
-        $exprobjmltot = explode(",",$improbjmltot);
-		
-		for($d=0; $d<count($exprobjmltot); $d++){
-			echo $exprobjmltot[$d];
-		}
-		//hitung total Prop masing-masing penyakit
+        //hitung total Prop masing-masing penyakit
         for($i=0; $i < count($exprobPenyakit); $i++){
-            $hasil[$i] = $exprobPenyakit[$i] * $exprobtot[$i] ;     
+            $hasil[$i] = $exprobPenyakit[$i] * $exprobtot[$i];     
         }
        
         $imhasi = implode(",",$newidPenyakit);

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 21 Jan 2019 pada 10.08
+-- Generation Time: 28 Jan 2019 pada 12.12
 -- Versi Server: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -37,8 +37,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`idAdmin`, `Username`, `Password`) VALUES
-(1, 'admin', '6c86fe223e360e0f063bbea90b5f359d'),
-(2, 'firzan', '39beb357710067fb3db5d608e73b2aeb');
+(1, 'admin', '6c86fe223e360e0f063bbea90b5f359d');
 
 -- --------------------------------------------------------
 
@@ -162,18 +161,18 @@ CREATE TABLE `penyakit` (
 --
 
 INSERT INTO `penyakit` (`idPenyakit`, `Penyakit`, `Penanganan`, `Probabilitas_penyakit`) VALUES
-(1, 'Ulat Api', 'a. Hayati, memanfaatkan musuh alami seperti semut hitam dan laba-laba yang terdapat di alam,dengan teknik konservasi.<br>\r\nb. Mekanis, dengan pemangkasan ranting-ranting pohon pelindung pada saat ulat masih kecil kemudian dimusnahkan', 0.3),
+(1, 'Ulat Api', 'a. Hayati, memanfaatkan musuh alami seperti semut hitam dan laba-laba yang terdapat di alam,dengan teknik konservasi.<br>b. Mekanis, dengan pemangkasan ranting-ranting pohon pelindung pada saat ulat masih kecil kemudian dimusnahkan', 0.25),
 (2, 'Ulat Kilan', 'a. Hayati, menggunakan musuh alami yang ada di alam. Penggunaan lamtoro sebagai tanaman pelindung. <br>\r\nb. Mekanis, dengan pemangkasan ranting-ranting pada pohon pelindung pada saat ulat masih kecil lalu dimusnahkan.', 0.3),
-(3, 'Kumbang Apoginia Sp', 'a. Hayati, menggunakan musuh alami yang ada di alam. Penggunaan lamtoro sebagai tanaman pelindung. <br>\r\nb. Kimiawi, dengan penyemprotan larutan insektisida Thiodan 35 EC (bahan aktif endosulfan) konsentrasi 0,2 %. Sevidan 70 WP (bahan aktif endosulfan) konsentrasi 0,2 %.Penyemprotan larutan insektisida dilakukan pada sore hari sampai pukul 21.00 wib dengan 1-2 kali seminggu (jika serangan meluas). ', 0.3),
-(4, 'Kepik Penghisap Buah', 'a. Hayati, dengan pemanfaatan agensia hayati, seperti Beauveria bassiana, semut hitam, laba-laba, belalang sembah, dan capung. Penyemprotan suspensi jamur Beauveria bassiana dapat dilakukan sebulan sekali pada sore hari.<br> \r\nb. Mekanis, dengan sarungisasi (pembungkusan buah). Kantong pembungkus tersebut harus dilubangi di bagian bawah supaya air dapat keluar. Jika tidak dilubangi, mungkin buah kakao akan membusuk. <br>\r\nc. Mekanis, pemangkasan mengurangi atau membuang cabang, ranting, dan daun yang tidak berguna sehingga penggunaan zat makanan lebih efisien. Selain itu, pemangkasan akan memberikan banyak penetrasi sinar matahari, serta gerakan angin yang bebas sehingga akan mengurangi serangan Helopeltis, karena itu lakukanlah pemangkasan yang tepat, waktu dan cara yang benar baik dalam pemangkasan bentuk, maupun pemangkasan produk. Drainase kebun perlu diperhatikan agar tidak ada air yang menggenang di kebun.', 0.6),
-(5, 'Tikus', 'a. Hayati, dengan menggunakan predator yaitu burung hantu Tyto alba, 1 pasang untuk 25 Ha. <br>\r\nb. Kimiawi, dengan menggunakan racun tikus. Umpan dibuat dengan menggunakan bahan racun racumin / rodentisida lain yang dicampur dengan menggunakan jagung giling, ikan asin, minyak sawit dan lilin kemudian dicetak menjadi persegi 2,5 x 2,5 cm, berat per umpan 13-15 gram. Diletakkan pada pangkal batang 1 buah per pohon biarkan selama sehari. ', 0.5),
-(6, 'Penggerek Buah Kakao', 'a. Sanitasi, dengan membelah kulit buah yang terserang setelah panen, seluruhnya dikubur.<br> \r\nb. Mekanis, dengan sarungisasi (pembungkusan buah). Kantong pembungkus tersebut harus dilubangi di bagian bawah supaya air dapat keluar. Jika tidak dilubangi, mungkin buah kakao akan membusuk.<br> \r\nc. Mekanis, dengan pemangkasan yaitu mengurangi atau membuang cabang, ranting, dan daun yang tidak berguna.<br> \r\nd. Memanen sering yaitu satu minggu sekali. ', 0.5),
-(7, 'Penggerek Batang', 'a. Hayati, dengan memanfaatkan agensia hayati, seperti Beauveria bassiana dan berbagai serangga predator yang ada di alam seperti semut hitam, laba-laba, belalang sembah, dan capung. Penyemprotan suspensi jamur Beauveria bassiana dapat dilakukan sebulan sekali pada sore hari.<br> \r\nb. Mekanis, dengan memotong batang terserang 10 cm dibawah lubang gerekan ke arah batang, kemudian ulat dibakar atau dimusnahkan. <br>', 0.7),
-(8, 'Vascular Streak Dieback (VSD)', 'a. Sanitasi, dengan parit drainase yang dibuat agar tidak ada genangan air dalam kebun pada musim hujan. <br>\r\nb. Mekanis, dengan memotong ranting/ cabang terserang sampai 30 cm pada bagian yang masih sehat kemudian dipupuk NPK 1,5 kali dosis anjuran.', 0.6),
-(9, 'Busuk Buah', 'a. Sanitasi kebun, dengan pemangkasan buah terserang. Buah busuk tersebut dipendam dalam tanah dengan kedalaman 30 cm. Pengendalian secara sanitasi sebaiknya sering dilakukan terutama pada saat memasuki musim hujan. <br>\r\nb. Kimiawi, yaitu menggunakan fungisida. Fungisida yang digunakan umumnya berbahan aktif tembaga nordox, kocide77, cupravit, dan lainnya.<br>\r\nc. Kultur Tenis, yaitu dengan memodifikasi lingkungan bertujuan untuk mencegah tumbuh dan berkembangnya penyakit seperti pengaturan dan pemangkasan pohon pelindung. ', 0.6),
-(10, 'Antraknose', 'a. Sanitasi, dengan pengaturan naungan sehingga tajuk pohon kakao tidak terkena sinar matahari langsung. <br>\r\nb. Mekanis, dengan memangkas cabang dan ranting yang terinfeksi, mengambil buah yang terserang, dikumpulkan, dan ditanam atau dibakar. <br>\r\nc. Perbaikan drainase tanah untuk menghindari genangan air dalam kebun. ', 0.6),
-(11, 'Jamur Upas', 'a. Kultur teknis, dengan pemangkasan pohon pelindung untuk mengurangi kelembapan kebun sehingga sinar matahari dapat masuk areal pertanaman kakao. <br>\r\nb. Mekanis, yaitu memotong cabang/ ranting sakit sampai 15 cm pada bagian yang masih sehat, membersihkan/ mengeruk benang-benang jamur pada gejala awal dari cabang yang sakit, kemudian diolesi dengan fungisida.', 0.9),
-(12, 'Jamur Akar', 'a. Sanitasi, dengan membongkar semua tunggul pada saat persiapan lahan terutama yang terinfeksi jamur akar. <br>\r\nb. Lubang bekas bongkaran dibiarkan terkena sinar matahari selama satu tahun. \r\n/nc. Kimiawi, dengan memberikan belerang 150 gr minimal 6 bulan pada lubang bekas bongkaran.<br>\r\nd. Minimal 4 pohon sekitarnya diberi Trichoderma sp. 200gr/pohon pada awal musim hujan dan diulang setiap 6 bulan sekali sampai tidak ditemukan gejala penyakit akar di areal pertanaman kakao tersebut. ', 0.9);
+(3, 'Kumbang Apoginia Sp', 'a. Hayati, menggunakan musuh alami yang ada di alam. Penggunaan lamtoro sebagai tanaman pelindung. <br>b. Kimiawi, dengan penyemprotan larutan insektisida Thiodan 35 EC (bahan aktif endosulfan) konsentrasi 0,2 %. Sevidan 70 WP (bahan aktif endosulfan) konsentrasi 0,2 %.Penyemprotan larutan insektisida dilakukan pada sore hari sampai pukul 21.00 wib dengan 1-2 kali seminggu (jika serangan meluas). ', 0.2),
+(4, 'Kepik Penghisap Buah', 'a. Hayati, dengan pemanfaatan agensia hayati, seperti Beauveria bassiana, semut hitam, laba-laba, belalang sembah, dan capung. Penyemprotan suspensi jamur Beauveria bassiana dapat dilakukan sebulan sekali pada sore hari.<br> b. Mekanis, dengan sarungisasi (pembungkusan buah). Kantong pembungkus tersebut harus dilubangi di bagian bawah supaya air dapat keluar. Jika tidak dilubangi, mungkin buah kakao akan membusuk. <br>c. Mekanis, pemangkasan mengurangi atau membuang cabang, ranting, dan daun yang tidak berguna sehingga penggunaan zat makanan lebih efisien. Selain itu, pemangkasan akan memberikan banyak penetrasi sinar matahari, serta gerakan angin yang bebas sehingga akan mengurangi serangan Helopeltis, karena itu lakukanlah pemangkasan yang tepat, waktu dan cara yang benar baik dalam pemangkasan bentuk, maupun pemangkasan produk. Drainase kebun perlu diperhatikan agar tidak ada air yang menggenang di kebun.', 0.3),
+(5, 'Tikus', 'a. Hayati, dengan menggunakan predator yaitu burung hantu Tyto alba, 1 pasang untuk 25 Ha. <br>b. Kimiawi, dengan menggunakan racun tikus. Umpan dibuat dengan menggunakan bahan racun racumin / rodentisida lain yang dicampur dengan menggunakan jagung giling, ikan asin, minyak sawit dan lilin kemudian dicetak menjadi persegi 2,5 x 2,5 cm, berat per umpan 13-15 gram. Diletakkan pada pangkal batang 1 buah per pohon biarkan selama sehari. ', 0.4),
+(6, 'Penggerek Buah Kakao', 'a. Sanitasi, dengan membelah kulit buah yang terserang setelah panen, seluruhnya dikubur.<br> b. Mekanis, dengan sarungisasi (pembungkusan buah). Kantong pembungkus tersebut harus dilubangi di bagian bawah supaya air dapat keluar. Jika tidak dilubangi, mungkin buah kakao akan membusuk.<br> c. Mekanis, dengan pemangkasan yaitu mengurangi atau membuang cabang, ranting, dan daun yang tidak berguna.<br> d. Memanen sering yaitu satu minggu sekali. ', 0.31),
+(7, 'Penggerek Batang', 'a. Hayati, dengan memanfaatkan agensia hayati, seperti Beauveria bassiana dan berbagai serangga predator yang ada di alam seperti semut hitam, laba-laba, belalang sembah, dan capung. Penyemprotan suspensi jamur Beauveria bassiana dapat dilakukan sebulan sekali pada sore hari.<br> b. Mekanis, dengan memotong batang terserang 10 cm dibawah lubang gerekan ke arah batang, kemudian ulat dibakar atau dimusnahkan. <br>', 0.34),
+(8, 'Vascular Streak Dieback (VSD)', 'a. Sanitasi, dengan parit drainase yang dibuat agar tidak ada genangan air dalam kebun pada musim hujan. <br>b. Mekanis, dengan memotong ranting/ cabang terserang sampai 30 cm pada bagian yang masih sehat kemudian dipupuk NPK 1,5 kali dosis anjuran.', 0.51),
+(9, 'Busuk Buah', 'a. Sanitasi kebun, dengan pemangkasan buah terserang. Buah busuk tersebut dipendam dalam tanah dengan kedalaman 30 cm. Pengendalian secara sanitasi sebaiknya sering dilakukan terutama pada saat memasuki musim hujan. <br>b. Kimiawi, yaitu menggunakan fungisida. Fungisida yang digunakan umumnya berbahan aktif tembaga nordox, kocide77, cupravit, dan lainnya.<br>c. Kultur Tenis, yaitu dengan memodifikasi lingkungan bertujuan untuk mencegah tumbuh dan berkembangnya penyakit seperti pengaturan dan pemangkasan pohon pelindung. ', 0.43),
+(10, 'Antraknose', 'a. Sanitasi, dengan pengaturan naungan sehingga tajuk pohon kakao tidak terkena sinar matahari langsung. <br>b. Mekanis, dengan memangkas cabang dan ranting yang terinfeksi, mengambil buah yang terserang, dikumpulkan, dan ditanam atau dibakar. <br>c. Perbaikan drainase tanah untuk menghindari genangan air dalam kebun. ', 0.5),
+(11, 'Jamur Upas', 'a. Kultur teknis, dengan pemangkasan pohon pelindung untuk mengurangi kelembapan kebun sehingga sinar matahari dapat masuk areal pertanaman kakao. <br>b. Mekanis, yaitu memotong cabang/ ranting sakit sampai 15 cm pada bagian yang masih sehat, membersihkan/ mengeruk benang-benang jamur pada gejala awal dari cabang yang sakit, kemudian diolesi dengan fungisida.', 0.4),
+(12, 'Jamur Akar', 'a. Sanitasi, dengan membongkar semua tunggul pada saat persiapan lahan terutama yang terinfeksi jamur akar. <br>b. Lubang bekas bongkaran dibiarkan terkena sinar matahari selama satu tahun. /nc. Kimiawi, dengan memberikan belerang 150 gr minimal 6 bulan pada lubang bekas bongkaran.<br>d. Minimal 4 pohon sekitarnya diberi Trichoderma sp. 200gr/pohon pada awal musim hujan dan diulang setiap 6 bulan sekali sampai tidak ditemukan gejala penyakit akar di areal pertanaman kakao tersebut. ', 0.4);
 
 -- --------------------------------------------------------
 
@@ -225,17 +224,15 @@ INSERT INTO `rule` (`idRule`, `idGejala`, `idPenyakit`, `Probabilitas_gejala`) V
 (30, 24, 9, 0.4),
 (31, 3, 10, 0.3),
 (32, 9, 10, 0.4),
-(33, 11, 10, 0.5),
-(34, 25, 10, 0.6),
-(35, 26, 10, 0.6),
-(36, 27, 11, 0.2),
-(37, 28, 11, 0.6),
-(38, 29, 11, 0.2),
-(39, 30, 11, 0.3),
-(40, 2, 12, 0.2),
-(41, 3, 12, 0.3),
-(42, 30, 12, 0.3),
-(43, 31, 12, 0.6);
+(33, 25, 10, 0.6),
+(34, 26, 10, 0.6),
+(35, 27, 11, 0.2),
+(36, 28, 11, 0.6),
+(37, 29, 11, 0.2),
+(38, 30, 11, 0.3),
+(39, 2, 12, 0.2),
+(40, 30, 12, 0.3),
+(41, 31, 12, 0.6);
 
 --
 -- Indexes for dumped tables
@@ -296,7 +293,7 @@ ALTER TABLE `rule`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `idAdmin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idAdmin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `gejala`
 --
@@ -311,12 +308,12 @@ ALTER TABLE `gejalapenyakit`
 -- AUTO_INCREMENT for table `jumlah_prob`
 --
 ALTER TABLE `jumlah_prob`
-  MODIFY `idJumlahProb` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `idJumlahProb` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `jumlah_prob_akhir`
 --
 ALTER TABLE `jumlah_prob_akhir`
-  MODIFY `idJumlahProbAkhir` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idJumlahProbAkhir` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `penyakit`
 --
